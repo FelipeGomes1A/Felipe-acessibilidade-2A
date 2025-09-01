@@ -1,0 +1,169 @@
+:root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+    --azul-claro: #A7D8FF; /* Azul Claro */
+    --azul-escuro: #1E3A8A; /* Azul Escuro */
+    --cinza-claro: #D1D5DB; /* Cinza Claro */
+    --cinza-escuro: #4B5563; /* Cinza Escuro */
+    --amarelo-claro: #F7D060; /* Amarelo Claro */
+    --roxo-claro: #D6A7E2; /* Roxo Claro */
+    --roxo-escuro: #6B21A8; /* Roxo Escuro */
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F1F1; /* Fundo suave para o corpo */
+}
+
+header {
+    background-color: #ffffff; /* Mantém o header branco */
+}
+
+.nav-link {
+    color: var(--azul-escuro); /* Substituído o laranja por azul escuro */
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: var(--azul-claro); /* Azul suave como fundo */
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.botao-inicio {
+    background-color: var(--amarelo-claro); /* Amarelo suave para botões */
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    background-color: var(--roxo-claro); /* Alterado para roxo claro */
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--azul-escuro); /* Azul escuro para os títulos */
+}
+
+#galeria {
+    background-color: #FAF4F4;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    background-color: var(--roxo-claro); /* Fundo roxo claro para a seção de contato */
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    background-color: var(--cinza-claro); /* Fundo do formulário em cinza claro */
+}
+
+.formulario button {
+    background-color: var(--azul-escuro); /* Azul escuro para botões */
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: var(--cinza-claro); /* Caixa de texto com fundo cinza claro */
+}
+
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
